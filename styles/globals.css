@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -13,4 +17,22 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@layer components {
+  p b {
+    @apply text-orange-400 font-bold;
+  }
+
+  p a {
+    @apply text-blue-400;
+  }
+
+  ul li {
+    @apply cursor-pointer select-none;
+  }
+
+  body {
+    @apply overflow-x-hidden;
+  }
 }
